@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url('assets/images/bg.jpg');
+    height: 600px;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.transparent-box{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    width: 80vw;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+}
+
+.nav-select{
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn option{
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-signin{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.red-btn{
+    background-color: red;
+    color: white;
+}
+.red-btn:hover{
+    cursor: pointer;
+}
+
+.main-content{
+    display: flex;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    height: calc(600px - 80px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-content h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.main-content p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.main-head h3{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.first-main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.second-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.transparent-btn{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.email{
+    width: 300px;
+    border-style: groove;
+    border-color: aliceblue;
+    border-width: 1px;
+}
+.get-started{
+    font-size: 18px;
+    font-weight: 500;
+    width: 150px;
+}
+
+.separation{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    height: 5px;
+}
+
+.first{
+    width: 60vw;
+    min-height: 50vh;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    color: white;
+}
+.visuals{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visuals img{
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+.visuals video{
+    width: 350px;
+    position: absolute;
+}
+.info h2{
+    font-size: 44px;
+}
+.info p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.faq-box{
+    padding: 20px;
+    width: 60vw;
+    margin: auto;
+    background-color: rgb(86, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    box-sizing: border-box;
+}
+.faq-box:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sec-input{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.desc{
+    display: flex;
+    justify-content: center;
+}
+.desc h5{
+    color: white;
+    padding: 25px 0 10px 0;
+    text-align: center;
+}
+.input-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.email2{
+    width: 200px;
+    border-style: groove;
+    border-color: aliceblue;
+    border-width: 1px;
+}
+.get-started2{
+    
+}
+.email2, .get-started2{
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.foot{
+    color: white;
+    display: grid;
+    width: 60vw;
+    margin: auto;
+}
+.foot div:first-child{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.footer-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.foot span{
+    text-decoration: underline;
+}
+.foot span:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 990px){
+    .footer-table{
+        grid-template-columns: 1fr 1fr;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .info h2{
+        padding-top: 10px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .info p{
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .main-content{
+        height: calc(500px - 80px);
+        gap: 10px;
+    }
+    
+    .main-content h1{
+        font-size: 34px;
+    }
+    .main-content p{
+        font-size: 14px;
+    }
+    .main-head h3{
+        font-size: 14px;
+    }
+    .second-main{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 455px) {
+    .footer-table{
+        grid-template-columns: 1fr;
+    }
+
+    .faq-box{
+        padding: 10px;
+    }
+
+    .nav-btn{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .main-btn{
+        padding: 7px;
+        font-size: 14px;;
+    }
+    .email{
+        width: 200px;
+    }
+    .get-started{
+        width: 110px;
+    }
+
+    .input-btn{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .visuals img{
+        width: 300px;
+    }
+    .visuals video{
+        width: 300px;
+    }
+
+    nav{
+        width: 90vw;
+        height: 50px;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .btn{
+        gap: 5px;
+    }
+
+    .main{
+        height: 500px;
+    }
+    .transparent-box{
+        height: 500px;
+    }
+}
